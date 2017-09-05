@@ -1,4 +1,5 @@
-Ross Pantone
+Ross Pantone 
+
 Assignment 2
 
 # Introduction to Front-end development with Angular.js
