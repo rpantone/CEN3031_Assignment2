@@ -5,22 +5,21 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     
     /* NEW STUFF */
     
-	$scope.finder = '';
+    $scope.finder = '';
 	
     $scope.addListing = function() {
-		$scope.listings.push({
-			"code": $scope.code_,
-			"name": $scope.name_,
+        $scope.listings.push({
+	    "code": $scope.code_,
+	     "name": $scope.name_,
             "address": $scope.address_
-		});
-	};
+        });
+    };
 	
     $scope.deleteListing = function(index) {
-		$scope.listings.splice(index, 1);
-	};
+        $scope.listings.splice(index, 1);
+    };
     $scope.showDetails = function(index) {
-		$scope.detailedInfo = $scope.listings[index];
-	};
-	
+        $scope.detailedInfo = $scope.listings[index];
+    };
   }
 ]);
